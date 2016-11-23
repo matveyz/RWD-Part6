@@ -1,0 +1,194 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.device {
+    display: flex;
+    flex-direction: column;
+    min-width: 100%;
+}
+
+.red {
+    min-height: 70px;
+    background: red;
+}
+
+.orange {
+    min-height: 300px;
+    background: orange;
+}
+
+.green {
+    min-height: 300px;
+    background: green;
+}
+
+.pink {
+    min-height: 320px;
+    background: pink;
+}
+
+.blue {
+    min-height: 320px;
+    background: blue;
+}
+
+.yellow {
+    min-height: 320px;
+    background: yellow;
+    font-size: 30px;
+    font-family: Arial;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.space {
+    margin-bottom: 10px;
+}
+
+
+
+/* TABLET */
+
+@media (min-width: 555px) and (max-width: 999px) {
+    .computer {
+        display: none;
+    }
+    .tablet {
+        display: flex;
+        flex-direction: row;
+        order: 1;
+    }
+    .orange {
+        flex-grow: 2;
+        margin-right: 10px;
+        min-height: 200px;
+    }
+    .green {
+        flex-grow: 1;
+        min-height: 200px
+    }
+    .pink {
+        order: 3;
+        min-height: 600px;
+        background: pink;
+    }
+    .blue {
+        order: 3;
+        height: 100px;
+        background: blue;
+    }
+    .yellow {
+        order: 2;
+        min-height: 300px;
+        background: yellow;
+        font-size: 30px;
+        font-family: Arial;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+/*DESKTOPS*/
+
+@media (min-width: 1000px) {
+    .device {
+        display: none;
+    }
+    
+    .green1 {
+        min-height: 400px;
+        background: green;
+    }
+    .blue1 {
+        min-height: 300px;
+        background: blue;
+        margin-top: 10px;
+    }
+    .pink1 {
+        min-height: 510px;
+        background: pink;
+        width: 99%;
+        margin-right: 20px;
+    }
+    .red2 {
+        min-height: 70px;
+        background: red;
+    }
+    .orange2 {
+        min-height: 200px;
+        background: orange;
+    }
+    .row {
+        display: flex;
+        flex-direction: row;
+    }
+    .left {
+        display: inline-flex;
+        flex-wrap: wrap;
+        width: 80%;
+    }
+    .yellow1 {
+        margin-top: 0;
+        min-height: 270px;
+        background: yellow;
+        display: flex;
+        align-items: center;
+        font-size: 40px;
+        font-weight: bold;
+        font-family: Arial;
+        justify-content: center;
+        min-width: 48%;
+        margin-right: 20px;
+    }
+    .move {
+        margin-right: 0px;
+    }
+    .right {
+        min-width: 20%;
+        display: flex;
+        flex-direction: column;
+    }
+}
